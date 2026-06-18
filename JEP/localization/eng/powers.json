@@ -1,0 +1,9 @@
+{
+  "JEP-CRITICAL_FLAW_POWER.title": "Critical Flaw",
+  "JEP-CRITICAL_FLAW_POWER.description": "Next attack deals 0 damage, take double damage. Remove after taking damage or attack.",
+  "JEP-CRITICAL_FLAW_POWER.smartDescription": "Next attack deals [red]0 damage[/red], take [red]double damage[/red]. Remove after taking damage or attack.",
+
+  "JEP-DARK_BARRIER.title": "Dark Barrier",
+  "JEP-DARK_BARRIER.description": "Blocked attack damage is reflected to your attacker this turn.",
+  "JEP-DARK_BARRIER.smartDescription": "Blocked attack damage is reflected to your attacker this turn."
+}

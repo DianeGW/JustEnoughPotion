@@ -12,9 +12,11 @@ using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 
 
-namespace Moses.MosesCode.Potions;
+namespace JEP.JEPCode.Potions;
 [Pool(typeof(MegaCrit.Sts2.Core.Models.PotionPools.SharedPotionPool))]
-public sealed class BoomPotion : MosesPotion
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
+public sealed class BoomPotion : JEPPotion
+
 {
     public override PotionRarity Rarity => PotionRarity.Uncommon; //.Rare;
     public override PotionUsage Usage => PotionUsage.CombatOnly;

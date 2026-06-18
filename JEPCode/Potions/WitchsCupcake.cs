@@ -6,10 +6,11 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 
 using MegaCrit.Sts2.Core.Entities.Creatures;
 
-namespace Moses.MosesCode.Potions;
+namespace JEP.JEPCode.Potions;
 
 [Pool(typeof(MegaCrit.Sts2.Core.Models.PotionPools.SharedPotionPool))]
-public class WitchsCupcake : MosesPotion
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
+public class WitchsCupcake : JEPPotion
 {
     public override PotionRarity Rarity => PotionRarity.Uncommon;
     public override PotionUsage Usage => PotionUsage.AnyTime;

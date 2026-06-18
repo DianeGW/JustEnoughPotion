@@ -1,6 +1,6 @@
 ﻿using Godot;
 
-namespace Moses.MosesCode.Extensions;
+namespace JEP.JEPCode.Extensions;
 
 //Mostly utilities to get asset paths.
 public static class StringExtensions

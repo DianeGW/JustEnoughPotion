@@ -5,11 +5,12 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Entities.Creatures;
-
-namespace Moses.MosesCode.Potions;
+using JEP.JEPCode.Potions;
+namespace JEP.JEPCode.Potions;
 
 [Pool(typeof(MegaCrit.Sts2.Core.Models.PotionPools.SharedPotionPool))]
-public class CleansyPotion : MosesPotion
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
+public class CleansyPotion : JEPPotion
 {
     public override PotionRarity Rarity => PotionRarity.Uncommon;
     public override PotionUsage Usage => PotionUsage.CombatOnly   ;

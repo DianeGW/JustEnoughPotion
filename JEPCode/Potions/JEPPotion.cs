@@ -1,11 +1,11 @@
 using BaseLib.Abstracts;
 using BaseLib.Utils;
 using BaseLib.Extensions;
-using Moses.MosesCode.Extensions;
-namespace Moses.MosesCode.Potions;
+using JEP.JEPCode.Extensions;
+namespace JEP.JEPCode.Potions;
 
 [Pool(typeof(MegaCrit.Sts2.Core.Models.PotionPools.SharedPotionPool))]
-public abstract class MosesPotion : CustomPotionModel
+public abstract class JEPPotion : CustomPotionModel
 {
     public override string? CustomPackedImagePath =>
         $"{Id.Entry.RemovePrefix().ToLowerInvariant()}.png"

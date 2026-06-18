@@ -1,9 +1,9 @@
 using BaseLib.Abstracts;
-using Moses.MosesCode.Extensions;
+using JEP.JEPCode.Extensions;
 
-namespace Moses.MosesCode.Character;
+namespace JEP.JEPCode.Character;
 
-public class MosesPotionPool : CustomPotionPoolModel
+public class JEPPotionPool : CustomPotionPoolModel
 {
 //Copied from someone else's code, I don't know what it does but will keep it until I figure it out.///
     public override string BigEnergyIconPath => "icons/big_energy.png".ImagePath();

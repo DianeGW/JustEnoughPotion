@@ -6,9 +6,9 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace Moses.MosesCode.Powers;
-
-public class DarkBarrier : MosesPower
+namespace JEP.JEPCode.Powers;
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
+public class DarkBarrier : JEPPower
 {
     public override PowerType Type => PowerType.Buff;
 

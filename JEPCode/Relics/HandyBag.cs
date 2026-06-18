@@ -5,10 +5,12 @@ using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models; 
 using MegaCrit.Sts2.Core.Entities.Relics;
-using Moses.MosesCode.Extensions;
+using JEP.JEPCode.Extensions;
 
-namespace MosesCode.Relics;
-[Pool(typeof(MegaCrit.Sts2.Core.Models.RelicPools.SharedRelicPool))] 
+namespace JEPCode.Relics;
+[Pool(typeof(MegaCrit.Sts2.Core.Models.RelicPools.SharedRelicPool))]
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
+
 public sealed class AuxiliaryBag : CustomRelicModel 
 {
     private const string _potionSlotsKey = "PotionSlots";

@@ -3,10 +3,11 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using BaseLib.Abstracts;
-namespace Moses.MosesCode.Cards;
+namespace JEP.JEPCode.Cards;
 
 [Pool(typeof(TokenCardPool))]
-public class WhiteSigil: CustomCardModel
+[System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
+public class WhiteSigil : CustomCardModel
 {
 public override int MaxUpgradeLevel => 0;
     public override IEnumerable<CardKeyword> CanonicalKeywords => new List<CardKeyword> 

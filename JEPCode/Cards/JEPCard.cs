@@ -1,11 +1,11 @@
 ﻿using BaseLib.Abstracts;
 using BaseLib.Extensions;
-using Moses.MosesCode.Extensions;
+using JEP.JEPCode.Extensions;
 using MegaCrit.Sts2.Core.Entities.Cards;
 
-namespace Moses.MosesCode.Cards;
+namespace JEP.jepCode.Cards;
 
-public abstract class MosesCard(int cost, CardType type, CardRarity rarity, TargetType target) :
+public abstract class JEPCard(int cost, CardType type, CardRarity rarity, TargetType target) :
     CustomCardModel(cost, type, rarity, target)
 {
     public override string CustomPortraitPath => $"{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".BigCardImagePath();
