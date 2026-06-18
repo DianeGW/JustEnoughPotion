@@ -1,0 +1,78 @@
+using BaseLib.Patches.Features;
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Commands.Builders;
+using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Powers;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.ValueProps;
+
+namespace Moses.MosesCode.Powers;
+
+public class CriticalFlawPower : MosesPower
+{
+    private class Data
+    {
+        public bool trapTriggered = false;
+    }
+
+    public override PowerType Type => PowerType.Debuff;
+    public override PowerStackType StackType => PowerStackType.Counter;
+
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new DynamicVar("DamageDealtMultiplier", 0m),
+        new DynamicVar("DamageTakenMultiplier", 2m)
+    ];
+    protected override object InitInternalData()
+    {
+        return new Data();
+    }
+
+public override decimal ModifyDamageMultiplicative(Creature? target, decimal amount, ValueProp props, Creature? dealer, CardModel? cardSource)
+{
+    // 1. Only trigger if it is a real attack (CardSource is not null)
+    if (!props.IsPoweredAttack() || amount <= 0m || cardSource == null) return 1m;
+
+    // 2. Only trigger if THIS power's owner is involved in the hit
+    if (target != base.Owner && dealer != base.Owner) return 1m;
+
+    Data internalData = GetInternalData<Data>();
+
+    // 3. Set the trigger
+    if (dealer == base.Owner && target != base.Applier)
+    {
+        internalData.trapTriggered = true; 
+        return base.DynamicVars["DamageDealtMultiplier"].BaseValue;
+    }
+
+    if (target == base.Owner && dealer != base.Applier)
+    {
+        internalData.trapTriggered = true; 
+        return base.DynamicVars["DamageTakenMultiplier"].BaseValue; 
+    }
+
+    return 1m;
+}
+
+public override async Task AfterAttack(PlayerChoiceContext choiceContext, AttackCommand command)
+{
+    Data internalData = GetInternalData<Data>();
+
+    // 1. Identify the attacker (using the standard 'Attacker' property)
+    // 2. Identify the target/receiver (using the 'Targets' enumerable)
+    
+    // Check if the enemy holding this power was the one who performed the attack
+    bool wasOwnerAttacking = (command.Attacker == base.Owner);
+    
+    // Check if the enemy holding this power was the one hit by the attack
+    bool wasOwnerTargeted = (command.Targeting != null && command.Results == (base.Owner));
+
+    // Combine both: if they attacked OR were attacked, and the trigger was set, remove it.
+    if (internalData.trapTriggered && (wasOwnerAttacking || wasOwnerTargeted))
+    {
+        internalData.trapTriggered = false; 
+        await PowerCmd.Remove(this);
+    }
+}
+}
