@@ -1,2 +1,2 @@
-# Moses
-Still learning how to code. may contains some vibe code please don't judge. It's my first time using C#
+#Just Enough Potion for Slay The Spire 2
+Added new potions!
