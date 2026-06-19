@@ -1,12 +1,8 @@
 {
-  "JEP-CRITICAL_FLAW_POWER.title": "Critical Flaw",
-  "JEP-CRITICAL_FLAW_POWER.description": "Next attack deals 0 damage, take double damage. Remove after taking damage or attack.",
-  "JEP-CRITICAL_FLAW_POWER.smartDescription": "Next attack deals [red]0 damage[/red], take [red]double damage[/red]. Remove after taking damage or attack.",
-
-  "JEP-DARK_BARRIER.title": "Dark Barrier",
-  "JEP-DARK_BARRIER.description": "Blocked attack damage is reflected to your attacker this turn.",
-  "JEP-DARK_BARRIER.smartDescription": "Blocked attack damage is reflected to your attacker this turn.",
-  "JEP-WET.title":"Depressed",
-  "JEP-WET.description":"For the next 1 turns, Reduce [gold]block[/gold] by half",
-  "JEP-WET.smartDescription":"For the next [blue]{Amount}[/blue] turns, Reduce [gold]block[/gold] by half"
+  "JEP-DARK_REFLECT_POWER.title": "Dark Reflect",
+  "JEP-DARK_REFLECT_POWER.description": "Blocked attack damage is reflected to your attacker this turn.",
+  "JEP-DARK_REFLECT_POWER.smartDescription": "Blocked attack damage is reflected to your attacker this turn.",
+  "JEP-WET_POWER.title":"Depressed",
+  "JEP-WET_POWER.description":"For the next 1 turns, Reduce [gold]block[/gold] gain by half",
+  "JEP-WET_POWER.smartDescription":"For the next [blue]{Amount}[/blue] turns, Reduce [gold]block[/gold] gain by half"
 }

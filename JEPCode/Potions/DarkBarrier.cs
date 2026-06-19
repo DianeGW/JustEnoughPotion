@@ -20,7 +20,7 @@ public class DarkBarrier : JEPPotion
     {
     if (target != null)
     {
- await PowerCmd.Apply<Powers.DarkBarrier>
+ await PowerCmd.Apply<Powers.DarkReflectPower>
  ( choiceContext, 
             new[] { base.Owner.Creature }, 
             1m, 

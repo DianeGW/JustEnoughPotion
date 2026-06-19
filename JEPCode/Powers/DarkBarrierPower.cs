@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace JEP.JEPCode.Powers;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
-public class DarkBarrier : JEPPower
+public class DarkReflectPower : JEPPower
 {
     public override PowerType Type => PowerType.Buff;
 

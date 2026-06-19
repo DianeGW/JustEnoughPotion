@@ -5,7 +5,7 @@
   "JEP-GEM_CASKET.title": "Gem Casket",
   "JEP-GEM_CASKET.description": "Heal you by [green]5[/green] each you use a potion [gold]in combat[/gold].",
   "JEP-GEM_CASKET.flavor": "Oh shiny!!! wait...they're all candies?",
-  "JEP-BIRD-CAGE.title":"Bird Cage",
-  "JEP-BIRD-CAGE.desscription":"Whenever a potion deals damage, it deals 5 more.",
-  "JEP-BIRD-CAGE.flavor":"His name is Robin."
+  "JEP-BIRD_CAGE.title":"Bird Cage",
+  "JEP-BIRD_CAGE.description":"Whenever a potion deals damage, it deals 5 more.",
+  "JEP-BIRD_CAGE.flavor":"His name is Robin."
 }
