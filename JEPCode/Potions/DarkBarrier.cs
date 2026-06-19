@@ -17,16 +17,9 @@ public class DarkBarrier : JEPPotion
     public override PotionUsage Usage => PotionUsage.CombatOnly   ;
     public override TargetType TargetType => TargetType.Self; 
      protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
-    {
-    if (target != null)
-    {
- await PowerCmd.Apply<Powers.DarkReflectPower>
- ( choiceContext, 
-            new[] { base.Owner.Creature }, 
-            1m, 
-            base.Owner.Creature, 
-            null
-        );
+    { if (target != null)
+    { await PowerCmd.Apply<Powers.DarkReflectPower>
+ (choiceContext, new[] { base.Owner.Creature }, 1m, base.Owner.Creature, null);
     }
 }
 }

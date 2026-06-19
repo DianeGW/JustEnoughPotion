@@ -5,7 +5,6 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Entities.Creatures;
-using JEP.JEPCode.Potions;
 namespace JEP.JEPCode.Potions;
 
 [Pool(typeof(MegaCrit.Sts2.Core.Models.PotionPools.SharedPotionPool))]
@@ -22,11 +21,8 @@ public class CleansyPotion : JEPPotion
     {
         var activePowers = target.Powers.ToList(); 
         foreach (var power in activePowers)
-        {
-            if (power.Type == PowerType.Debuff)
-            {
-                await PowerCmd.Remove(power);
-            }
+        { if (power.Type == PowerType.Debuff)
+            { await PowerCmd.Remove(power); }
         }
     }
 }

@@ -21,6 +21,5 @@ public sealed class Donut : JEPPotion
     protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
     {
         JEPPotion.AssertValidForTargetedPotion(target);
-        await CreatureCmd.GainMaxHp(target, (int)this.DynamicVars.MaxHp.BaseValue);
-    }
+        await CreatureCmd.GainMaxHp(target, (int)this.DynamicVars.MaxHp.BaseValue); }
 }

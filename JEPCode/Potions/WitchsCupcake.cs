@@ -20,8 +20,6 @@ public class WitchsCupcake : JEPPotion
      protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
     {
     if (target != null)
-    {
-        await CreatureCmd.Heal(target, 15m);
-    }
+    { await CreatureCmd.Heal(target, 15m);}
  }
 }
