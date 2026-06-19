@@ -5,5 +5,8 @@
 
   "JEP-DARK_BARRIER.title": "Dark Barrier",
   "JEP-DARK_BARRIER.description": "Blocked attack damage is reflected to your attacker this turn.",
-  "JEP-DARK_BARRIER.smartDescription": "Blocked attack damage is reflected to your attacker this turn."
+  "JEP-DARK_BARRIER.smartDescription": "Blocked attack damage is reflected to your attacker this turn.",
+  "JEP-WET.title":"Depressed",
+  "JEP-WET.description":"For the next 1 turns, Reduce [gold]block[/gold] by half",
+  "JEP-WET.smartDescription":"For the next [blue]{Amount}[/blue] turns, Reduce [gold]block[/gold] by half"
 }
