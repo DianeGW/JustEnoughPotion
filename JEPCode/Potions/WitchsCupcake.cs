@@ -16,6 +16,7 @@ public class WitchsCupcake : JEPPotion
     public override PotionRarity Rarity => PotionRarity.Uncommon;
     public override PotionUsage Usage => PotionUsage.AnyTime;
     public override TargetType TargetType => TargetType.AnyPlayer; 
+    public override bool CanBeGeneratedInCombat => false;
      protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
     {
     if (target != null)

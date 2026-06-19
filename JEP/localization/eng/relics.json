@@ -3,6 +3,9 @@
   "JEP-AUXILIARY_BAG.description": "Gain [blue]1[/blue] potion slot. Procure [blue]1[/blue] random potion at the start of each combat.",
   "JEP-AUXILIARY_BAG.flavor": "It's a bag full of potions!!",
   "JEP-GEM_CASKET.title": "Gem Casket",
-  "JEP-GEM_CASKET.description": "Heal you by [green]5[/green] each you use a potion [gold]in combat[/gold], up to 3 times per combat. ",
-  "JEP-GEM_CASKET.flavor": "Oh shiny!!! wait...they're all candies?"
+  "JEP-GEM_CASKET.description": "Heal you by [green]5[/green] each you use a potion [gold]in combat[/gold].",
+  "JEP-GEM_CASKET.flavor": "Oh shiny!!! wait...they're all candies?",
+  "JEP-BIRD-CAGE.title":"Bird Cage",
+  "JEP-BIRD-CAGE.desscription":"Whenever a potion deals damage, it deals 5 more.",
+  "JEP-BIRD-CAGE.flavor":"His name is Robin."
 }

@@ -5,9 +5,11 @@
    "JEP-CLEANSY_POTION.title": "Cleansy Potion",
    "JEP-CLEANSY_POTION.description": "Remove [gold]all negative effects[/gold].",
    "JEP-THUNDERSHOWER_POTION.title": "Thundershower Potion",
-   "JEP-THUNDERSHOWER_POTION.description": "Apply [blue]1[/blue][gold]Weak[/gold] to all enemies and remove half of their [gold]block[/gold]. If your current [green]HP[/green] is below [red]50%[/red], remove [gold]all of their block[/gold]. It rains more if the user is depressed.",
+   "JEP-THUNDERSHOWER_POTION.description": "Apply [blue]1[/blue] [gold]Weak[/gold] to all enemies and reduce their block gain by 50% for [blue]3[/blue]. It rains more if the user is depressed.",
    "JEP-BOOM_POTION.title": "Boom Potion",
    "JEP-BOOM_POTION.description": "Deal damage equal to [green]HP[/green] lost this combat to [gold]ALL[/gold] other creatures.",
    "JEP-GOLD_POTION.title":"Gold Coin Pouch",
-    "JEP-GOLD_POTION.description":"Gain [gold]50%[/gold] of current gold.(up to [blue]50[/blue] gold)."
+    "JEP-GOLD_POTION.description":"Gain [gold]50%[/gold] of current gold.(up to [blue]50[/blue] gold).",
+   "JEP-DONUT.title":"Donut",
+   "JEP-DONUT.description": "Gain [blue]1[/blue] max HP."
 }

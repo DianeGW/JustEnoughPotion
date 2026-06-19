@@ -60,9 +60,43 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="JEP\images\relics\test\" />
       <Folder Include="Moses\images\card_portraits\big\" />
       <Folder Include="Moses\images\powers\big\" />
       <Folder Include="Moses\images\relics\big\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="JEP\images\card_portraits\big\weakness_counter.png" />
+      <Content Include="JEP\images\card_portraits\weakness_counter.png" />
+      <Content Include="JEP\images\icons\big_energy.png" />
+      <Content Include="JEP\images\icons\text_energy.png" />
+      <Content Include="JEP\images\potions\boom_potion.png" />
+      <Content Include="JEP\images\potions\cleansy_potion.png" />
+      <Content Include="JEP\images\potions\dark_barrier.png" />
+      <Content Include="JEP\images\potions\dark_barrier_outline.png" />
+      <Content Include="JEP\images\potions\gold_potion.png" />
+      <Content Include="JEP\images\potions\thundershower_potion.png" />
+      <Content Include="JEP\images\potions\witchs_cupcake.png" />
+      <Content Include="JEP\images\potions\witchs_cupcake_outline.png" />
+      <Content Include="JEP\images\powers\big\critical_flaw_power.png" />
+      <Content Include="JEP\images\powers\big\dark_barrier.png" />
+      <Content Include="JEP\images\powers\big\power.png" />
+      <Content Include="JEP\images\powers\critical_flaw_power.png" />
+      <Content Include="JEP\images\powers\dark_barrier.png" />
+      <Content Include="JEP\images\powers\power.png" />
+      <Content Include="JEP\images\relics\auxiliary_bag.png" />
+      <Content Include="JEP\images\relics\auxiliary_bag_outline.png" />
+      <Content Include="JEP\images\relics\big\auxiliary_bag.png" />
+      <Content Include="JEP\images\working image\auxiliary_bag.png" />
+      <Content Include="JEP\localization\eng\ancients.json" />
+      <Content Include="JEP\localization\eng\cards.json" />
+      <Content Include="JEP\localization\eng\card_keywords.json" />
+      <Content Include="JEP\localization\eng\potions.json" />
+      <Content Include="JEP\localization\eng\powers.json" />
+      <Content Include="JEP\localization\eng\relics.json" />
+      <Content Include="JEP\localization\eng\static_hover_tips.json" />
+      <Content Include="JEP\mod_image.png" />
     </ItemGroup>
     
     <Target Name="CheckDependencyPaths" >

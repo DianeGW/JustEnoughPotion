@@ -12,12 +12,12 @@ using MegaCrit.Sts2.Core.Entities.Powers;
 namespace JEP.JEPCode.Powers;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
 
-public sealed class Wet : JEPPower
+public sealed class WetPower : JEPPower
 {
 
  public override int DisplayAmount => Amount;
 
-    public override PowerType Type => PowerType.Buff;
+    public override PowerType Type => PowerType.Debuff;
     public override PowerStackType StackType => PowerStackType.Counter;
 
 protected override IEnumerable<IHoverTip> ExtraHoverTips => 

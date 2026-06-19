@@ -38,7 +38,7 @@ public sealed class ThundershowerPotion : JEPPotion
             // Visual Effect
             NCombatRoom.Instance?.PlaySplashVfx(enemy, new Color("78a7ff"));
             await PowerCmd.Apply<WeakPower>(choiceContext, enemy, (int)base.DynamicVars.Weak.BaseValue, playerCreature, null);
-            await PowerCmd.Apply<Wet>(choiceContext, enemy, 3, playerCreature, null);
+            await PowerCmd.Apply<WetPower>(choiceContext, enemy, 3, playerCreature, null);
 
             // 2. Block Removal Logic
             // Using base.Owner.Creature for HP check
