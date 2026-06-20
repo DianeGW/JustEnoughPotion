@@ -30,15 +30,17 @@ public sealed class ThundershowerPotion : JEPPotion
    {
         var playerCreature = base.Owner.Creature;
         var combat = playerCreature.CombatState;
+
         if (combat == null) return;
+
         foreach (var enemy in combat.Enemies)
         {
-            // VisualEffectCode
+            // Visual Effect
             NCombatRoom.Instance?.PlaySplashVfx(enemy, new Color("78a7ff"));
             await PowerCmd.Apply<WeakPower>(choiceContext, enemy, (int)base.DynamicVars.Weak.BaseValue, playerCreature, null);
             await PowerCmd.Apply<WetPower>(choiceContext, enemy, 3, playerCreature, null);
 
-            // BlockRemovalLogicCode
+            // 2. Block Removal Logic
             // Using base.Owner.Creature for HP check
             //float hpPercent = (float)playerCreature.CurrentHp / playerCreature.MaxHp;
             //int blockToRemove = (hpPercent < 0.5f) 

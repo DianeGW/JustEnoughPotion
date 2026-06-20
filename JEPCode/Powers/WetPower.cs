@@ -14,8 +14,9 @@ namespace JEP.JEPCode.Powers;
 
 public sealed class WetPower : JEPPower
 {
-//AmountCode
+
  public override int DisplayAmount => Amount;
+
     public override PowerType Type => PowerType.Debuff;
     public override PowerStackType StackType => PowerStackType.Counter;
 
@@ -38,6 +39,8 @@ protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
     {
         if (participants.Contains(base.Owner))
-        { await PowerCmd.Decrement(this); }
+        {
+            await PowerCmd.Decrement(this);
+        }
     }
 }
