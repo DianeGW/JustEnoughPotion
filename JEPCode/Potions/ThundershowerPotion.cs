@@ -19,7 +19,7 @@ namespace JEP.JEPCode.Potions;
 public sealed class ThundershowerPotion : JEPPotion
 
 {
-    public override PotionRarity Rarity => PotionRarity.Rare;
+    public override PotionRarity Rarity => PotionRarity.Uncommon;
     public override PotionUsage Usage => PotionUsage.CombatOnly;
     public override TargetType TargetType => TargetType.None;
 

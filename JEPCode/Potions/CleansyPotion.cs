@@ -12,7 +12,7 @@ namespace JEP.JEPCode.Potions;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
 public class CleansyPotion : JEPPotion
 {
-    public override PotionRarity Rarity => PotionRarity.Uncommon;
+    public override PotionRarity Rarity => PotionRarity.Rare;
     public override PotionUsage Usage => PotionUsage.CombatOnly   ;
     public override TargetType TargetType => TargetType.AnyPlayer; 
    protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
