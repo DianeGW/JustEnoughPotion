@@ -22,18 +22,21 @@ public sealed class BoomPotion : JEPPotion
     public override PotionRarity Rarity => PotionRarity.Uncommon; //.Rare;
     public override PotionUsage Usage => PotionUsage.CombatOnly;
     public override TargetType TargetType => TargetType.Self;
-protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
-{
-  var player = base.Owner?.Creature;
- if (player == null) return;
- int totalUnblockedDamage = (int)CombatManager.Instance.History.Entries.OfType<DamageReceivedEntry>().Where(e => e.Receiver == player && e.Result.UnblockedDamage > 0).Sum(e => e.Result.UnblockedDamage);
-if (totalUnblockedDamage <= 0) return;
- var combat = player.CombatState;
- if (combat?.Creatures == null) return;
- foreach (var creature in combat.Creatures.ToList()) {if (creature == null || creature == player || creature.CurrentHp <= 0) continue;
- if (creature is Creature)
- {
-   NCombatRoom.Instance?.CombatVfxContainer.AddChildSafely(NGroundFireVfx.Create(creature));}
-    await CreatureCmd.Damage(choiceContext,  creature, (decimal)totalUnblockedDamage, ValueProp.Unpowered, player );
+
+    protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
+    {
+        var player = base.Owner?.Creature;
+        if (player == null) return;
+        int totalUnblockedDamage = (int)CombatManager.Instance.History.Entries.OfType<DamageReceivedEntry>()
+            .Where(e => e.Receiver == player && e.Result.UnblockedDamage > 0).Sum(e => e.Result.UnblockedDamage);
+        if (totalUnblockedDamage <= 0) return;
+        var combat = player.CombatState;
+        if (combat?.Creatures == null) return;
+        var targets = combat.Creatures.Where(c => c != null && c != player && c.CurrentHp > 0).ToList();
+        foreach (var creature in targets)
+        {
+            NCombatRoom.Instance?.CombatVfxContainer.AddChildSafely(NFireSmokePuffVfx.Create(creature));
+        }
+        await CreatureCmd.Damage(choiceContext, targets, (decimal)totalUnblockedDamage, ValueProp.Unpowered, player);
     }
-}}
+}

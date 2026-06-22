@@ -9,5 +9,9 @@
   "JEP-BIRD_CAGE.description":"When you lose [blue]20[/blue] or more HP in a single turn, obtain a [gold]Boom Potion[/gold] (Once per combat).",
   "JEP-BIRD_CAGE.flavor":"His name is Robin.",
   "JEP-DONUT_COUPON.title":"Donut Coupon",
-  "JEP-DONUT_COUPON.description": "Every [blue]3[/blue] times you raise your Max HP, obtain a [gold]Donut[/gold]."
+  "JEP-DONUT_COUPON.description": "Every [blue]3[/blue] times you raise your Max HP, obtain a [gold]Donut[/gold].",
+  "JEP-DONUT_COUPON.flavor": "A coupon from a mysterious baker.",
+  "JEP-DYE.title": "Dye",
+  "JEP-DYE.description": "Upon pickup, obtain a copy of your latest [gold]Relic[/gold]. Cannot copy starter [gold]Relic[/gold]",
+  "JEP-DYE.flavor": "You can draw anything you want with this dye!"
 }

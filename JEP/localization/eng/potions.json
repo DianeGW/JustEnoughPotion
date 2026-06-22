@@ -11,9 +11,9 @@
    "JEP-GOLD_POTION.title":"Gold Coin Pouch",
     "JEP-GOLD_POTION.description":"Gain [gold]50%[/gold] of current gold.(up to [blue]100[/blue] gold).",
    "JEP-DONUT.title":"Donut",
-   "JEP-DONUT.description": "Gain [blue]1[/blue] Max HP and heal [blue]3[/blue].",
-   "JEP-GRANNY_WISDOM_POTION.title": "Granny's Wisdom Potion",
+   "JEP-DONUT.description": "Gain [blue]1[/blue] Max HP and heal [green]3[/green] HP.",
+   "JEP-GRANNY_WISDOM_POTION.title": "DéJà Vu Potion",
    "JEP-GRANNY_WISDOM_POTION.description":"The enemy repeats its current action next turn.",
-   "JEP-DREAM_POTION.title": "Nightmare Potion",
-   "JEP-DREAM_POTION.description": "Deal damage to enemy"
+   "JEP-AZURE_SEA_POTION.title": "Azure Sea Potion",
+   "JEP-AZURE_SEA_POTION.description": "Apply [blue]3[/blue] [gold]Azure Sea[/gold]."
 }

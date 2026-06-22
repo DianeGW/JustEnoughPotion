@@ -5,7 +5,13 @@
   "JEP-WET_POWER.title":"Depressed",
   "JEP-WET_POWER.description":"For the next 1 turns, Reduce [gold]block[/gold] gain by half",
   "JEP-WET_POWER.smartDescription":"For the next [blue]{Amount}[/blue] turns, Reduce [gold]block[/gold] gain by half",
-  "JEP-GRANNY_WISDOM_POWER.title": "Deja Vu",
+  "JEP-GRANNY_WISDOM_POWER.title": "Rewind",
   "JEP-GRANNY_WISDOM_POWER.description": "Repeat this turn action in the next turn",
-  "JEP-GRANNY_WISDOM_POWER.smartDescription": "Repeat this turn action in the next [blue]{Amount}[/blue] turns(Treated as buff)"
+  "JEP-GRANNY_WISDOM_POWER.smartDescription": "Repeat this turn action in the next [blue]{Amount}[/blue] turns(Treated as buff)",
+  "JEP-AZURE_SEA_POWER.title": "Azure Sea",
+  "JEP-AZURE_SEA_POWER.description": "Whenever this target takes damage, apply [blue]2[/blue] [gold]Blue Rose[/gold] to all of its allies. \nWhen removed, activate all [gold]Blue Rose[/gold] and remove them from allies.",
+  "JEP-AZURE_SEA_POWER.smartdescription":"Whenever this target takes damage, apply [blue]2[/blue] [gold]Blue Rose[/gold] to all of its allies.\nWhen removed, activate all [gold]Blue Rose[/gold] and remove them from allies.",
+  "JEP-BLUE_ROSE_POWER.title": "Blue Rose",
+  "JEP-BLUE_ROSE_POWER.description":"At the start of its turn, this target loses HP equal to half of the [gold]Blue Rose[/gold] stacks, then halve the stacks",
+  "JEP-BLUE_ROSE_POWER.smartdescription":"At the start of its turn, this target loses HP equal to half of the [gold]Blue Rose[/gold] stacks, then halve the stacks"
 }

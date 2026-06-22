@@ -9,7 +9,7 @@ namespace JEP.JEPCode.Relics;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
 public sealed class DonutCoupon : JEPRelic
 {private int _maxHpIncreases;
-    public override RelicRarity Rarity => RelicRarity.Uncommon;
+    public override RelicRarity Rarity => RelicRarity.Common;
     public override bool ShowCounter => true;
     public override int DisplayAmount => _maxHpIncreases;
     protected override IEnumerable<IHoverTip> ExtraHoverTips => 
