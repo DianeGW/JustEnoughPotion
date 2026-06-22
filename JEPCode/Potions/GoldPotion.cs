@@ -14,10 +14,11 @@ public sealed class GoldPotion : JEPPotion
     public override PotionRarity Rarity => PotionRarity.Common;
     public override PotionUsage Usage => PotionUsage.AnyTime;
     public override TargetType TargetType => TargetType.AnyPlayer;
+    public override bool CanBeGeneratedInCombat => false;
 protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
     {
         int currentGold = base.Owner.Gold; 
-        int goldGain = Math.Min((int)(currentGold * 0.5f), 50);
+        int goldGain = Math.Min((int)(currentGold * 0.5f), 100);
         await PlayerCmd.GainGold(goldGain, base.Owner);
     }
 }

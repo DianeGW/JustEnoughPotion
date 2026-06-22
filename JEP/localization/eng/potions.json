@@ -2,14 +2,18 @@
    "JEP-WITCHS_CUPCAKE.title": "Witch's Cupcake",
    "JEP-DARK_BARRIER.title": "Dark Barrier Potion",
    "JEP-DARK_BARRIER.description": "Blocked attack damage is reflected to your attacker this turn.",
-   "JEP-CLEANSY_POTION.title": "Cleansy Potion",
-   "JEP-CLEANSY_POTION.description": "Remove [gold]all negative effects[/gold].",
+   "JEP-CLEANSING_POTION.title": "Cleansing Potion",
+   "JEP-CLEANSING_POTION.description": "Remove [gold]all negative effects[/gold].",
    "JEP-THUNDERSHOWER_POTION.title": "Thundershower Potion",
    "JEP-THUNDERSHOWER_POTION.description": "Apply [blue]1[/blue] [gold]Weak[/gold] to all enemies and reduce their [gold]block[/gold] gain by [red]50%[/red] for [blue]3[/blue] turns.",
    "JEP-BOOM_POTION.title": "Boom Potion",
    "JEP-BOOM_POTION.description": "Deal damage equal to [green]HP[/green] lost this combat to [gold]ALL[/gold] other creatures.",
    "JEP-GOLD_POTION.title":"Gold Coin Pouch",
-    "JEP-GOLD_POTION.description":"Gain [gold]50%[/gold] of current gold.(up to [blue]50[/blue] gold).",
+    "JEP-GOLD_POTION.description":"Gain [gold]50%[/gold] of current gold.(up to [blue]100[/blue] gold).",
    "JEP-DONUT.title":"Donut",
-   "JEP-DONUT.description": "Gain [blue]1[/blue] Max HP."
+   "JEP-DONUT.description": "Gain [blue]1[/blue] Max HP and heal [blue]3[/blue].",
+   "JEP-GRANNY_WISDOM_POTION.title": "Granny's Wisdom Potion",
+   "JEP-GRANNY_WISDOM_POTION.description":"The enemy repeats its current action next turn.",
+   "JEP-DREAM_POTION.title": "Nightmare Potion",
+   "JEP-DREAM_POTION.description": "Deal damage to enemy"
 }

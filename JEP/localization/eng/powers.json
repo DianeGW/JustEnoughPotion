@@ -4,5 +4,8 @@
   "JEP-DARK_REFLECT_POWER.smartDescription": "Blocked attack damage is reflected to your attacker this turn.",
   "JEP-WET_POWER.title":"Depressed",
   "JEP-WET_POWER.description":"For the next 1 turns, Reduce [gold]block[/gold] gain by half",
-  "JEP-WET_POWER.smartDescription":"For the next [blue]{Amount}[/blue] turns, Reduce [gold]block[/gold] gain by half"
+  "JEP-WET_POWER.smartDescription":"For the next [blue]{Amount}[/blue] turns, Reduce [gold]block[/gold] gain by half",
+  "JEP-GRANNY_WISDOM_POWER.title": "Deja Vu",
+  "JEP-GRANNY_WISDOM_POWER.description": "Repeat this turn action in the next turn",
+  "JEP-GRANNY_WISDOM_POWER.smartDescription": "Repeat this turn action in the next [blue]{Amount}[/blue] turns(Treated as buff)"
 }

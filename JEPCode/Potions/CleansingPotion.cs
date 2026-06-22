@@ -11,7 +11,7 @@ namespace JEP.JEPCode.Potions;
 [Pool(typeof(MegaCrit.Sts2.Core.Models.PotionPools.SharedPotionPool))]
 //if u delete the line below it keep giving an error, idk how to fix it, if u know how pls let me know!
 [System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
-public class CleansyPotion : JEPPotion
+public class CleansingPotion : JEPPotion
 {
     public override PotionRarity Rarity => PotionRarity.Rare;
     public override PotionUsage Usage => PotionUsage.CombatOnly   ;

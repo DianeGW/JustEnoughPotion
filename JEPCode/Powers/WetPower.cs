@@ -19,7 +19,6 @@ public sealed class WetPower : JEPPower
 
     public override PowerType Type => PowerType.Debuff;
     public override PowerStackType StackType => PowerStackType.Counter;
-
 protected override IEnumerable<IHoverTip> ExtraHoverTips => 
         new List<IHoverTip> { HoverTipFactory.Static(StaticHoverTip.Block) };
 

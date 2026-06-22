@@ -21,7 +21,7 @@ public sealed class BoomPotion : JEPPotion
 {
     public override PotionRarity Rarity => PotionRarity.Uncommon; //.Rare;
     public override PotionUsage Usage => PotionUsage.CombatOnly;
-    public override TargetType TargetType => TargetType.None;
+    public override TargetType TargetType => TargetType.Self;
 protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
 {
   var player = base.Owner?.Creature;

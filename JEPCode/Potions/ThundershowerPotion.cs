@@ -21,7 +21,7 @@ public sealed class ThundershowerPotion : JEPPotion
 {
     public override PotionRarity Rarity => PotionRarity.Uncommon;
     public override PotionUsage Usage => PotionUsage.CombatOnly;
-    public override TargetType TargetType => TargetType.None;
+    public override TargetType TargetType => TargetType.AllEnemies;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => 
         new List<DynamicVar> { new PowerVar<WeakPower>(1m) };

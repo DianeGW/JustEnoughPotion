@@ -37,15 +37,13 @@
         <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="*" />
         <!-- Generates a .pck file when building if only using simple assets. May not work on all setups. Uncomment to test. -->
         <PackageReference Include="BSchneppe.StS2.PckPacker" Version="0.1.1" PrivateAssets="All" />
-        <AdditionalFiles Include="Moses/localization/**/*.json"/> <!-- Used by analyzer -->
+
     </ItemGroup>
 
     <ItemGroup>
-        <Compile Remove="Moses/**" />
         <Compile Remove="materials/**" />
         <Compile Remove="shaders/**" />
         <Compile Remove="images/**" />
-        <EmbeddedResource Remove="Moses/**" />
         <EmbeddedResource Remove="materials/**" />
         <EmbeddedResource Remove="shaders/**" />
         <EmbeddedResource Remove="images/**" />
@@ -54,16 +52,11 @@
     <ItemGroup>
         <None Condition="Exists('Directory.Build.props')" Include="Directory.Build.props"/>
         <None Include=".gitignore" />
-        <None Include="Moses.json" />
         <None Include="project.godot"/>
-        <None Include="Moses/**" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="JEP\images\relics\test\" />
-      <Folder Include="Moses\images\card_portraits\big\" />
-      <Folder Include="Moses\images\powers\big\" />
-      <Folder Include="Moses\images\relics\big\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -72,7 +65,7 @@
       <Content Include="JEP\images\icons\big_energy.png" />
       <Content Include="JEP\images\icons\text_energy.png" />
       <Content Include="JEP\images\potions\boom_potion.png" />
-      <Content Include="JEP\images\potions\cleansy_potion.png" />
+      <Content Include="JEP\images\potions\cleansing_potion.png" />
       <Content Include="JEP\images\potions\dark_barrier.png" />
       <Content Include="JEP\images\potions\dark_barrier_outline.png" />
       <Content Include="JEP\images\potions\gold_potion.png" />
@@ -90,7 +83,6 @@
       <Content Include="JEP\images\relics\big\auxiliary_bag.png" />
       <Content Include="JEP\images\working image\auxiliary_bag.png" />
       <Content Include="JEP\localization\eng\ancients.json" />
-      <Content Include="JEP\localization\eng\cards.json" />
       <Content Include="JEP\localization\eng\card_keywords.json" />
       <Content Include="JEP\localization\eng\potions.json" />
       <Content Include="JEP\localization\eng\powers.json" />
