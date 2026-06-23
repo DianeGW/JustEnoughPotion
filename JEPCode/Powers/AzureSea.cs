@@ -45,7 +45,7 @@ public sealed class AzureSeaPower : JEPPower
                         enemy,
                         (decimal)stacksOnEnemy,
                         ValueProp.Unblockable | ValueProp.Unpowered,
-                        (Creature?)null // Explicitly cast to Creature? to resolve the ambiguity
+                        (Creature?)null 
                     );
             }
         }

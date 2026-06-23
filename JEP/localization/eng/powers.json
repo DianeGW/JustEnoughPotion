@@ -7,7 +7,7 @@
   "JEP-WET_POWER.smartDescription":"For the next [blue]{Amount}[/blue] turns, Reduce [gold]block[/gold] gain by half",
   "JEP-GRANNY_WISDOM_POWER.title": "Rewind",
   "JEP-GRANNY_WISDOM_POWER.description": "Repeat this turn action in the next turn",
-  "JEP-GRANNY_WISDOM_POWER.smartDescription": "Repeat this turn action in the next [blue]{Amount}[/blue] turns(Treated as buff)",
+  "JEP-GRANNY_WISDOM_POWER.smartDescription": "Repeat this turn action in the next turn.(Treated as buff)",
   "JEP-AZURE_SEA_POWER.title": "Azure Sea",
   "JEP-AZURE_SEA_POWER.description": "Whenever this target takes damage, apply [blue]2[/blue] [gold]Blue Rose[/gold] to all of its allies. \nWhen removed, activate all [gold]Blue Rose[/gold] and remove them from allies.",
   "JEP-AZURE_SEA_POWER.smartdescription":"Whenever this target takes damage, apply [blue]2[/blue] [gold]Blue Rose[/gold] to all of its allies.\nWhen removed, activate all [gold]Blue Rose[/gold] and remove them from allies.",

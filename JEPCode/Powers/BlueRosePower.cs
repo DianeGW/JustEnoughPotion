@@ -30,12 +30,7 @@ public sealed class BlueRosePower : JEPPower
                 base.Owner
             );
             await PowerCmd.ModifyAmount(
-                new ThrowingPlayerChoiceContext(), // 1. choiceContext
-                this, // 2. power (the current instance)
-                -damageAmount, // 3. offset
-                base.Owner, // 4. applier (the creature who owns the power)
-                null, // 5. cardSource (null because it's a passive effect)
-                false);
+                new ThrowingPlayerChoiceContext(), this, -damageAmount, base.Owner, null, false);
             Flash();
         }
     }

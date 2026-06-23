@@ -11,7 +11,7 @@ namespace JEP.JEPCode.Potions;
 [System.Diagnostics.CodeAnalysis.SuppressMessage("Localization", "STS001:Symbol missing localization", Justification = "<Pending>")]
 public class AzureSeaPotion : JEPPotion
 {
-    public override PotionRarity Rarity => PotionRarity.Rare;
+    public override PotionRarity Rarity => PotionRarity.Uncommon;
     public override PotionUsage Usage => PotionUsage.CombatOnly;
     public override TargetType TargetType => TargetType.AnyEnemy;
     public override IEnumerable<IHoverTip> ExtraHoverTips => 
